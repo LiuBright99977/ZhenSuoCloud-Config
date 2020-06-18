@@ -35,8 +35,4 @@ spring:
         password: 123456
         username: admin
     zipkin:
-      sender:
-        type: rabbit
-    sleuth:
-      sampler:
-        probability: 1.0
+      base-url: http://192.168.40.132:9411/
