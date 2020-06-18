@@ -1,0 +1,26 @@
+eureka:
+    client:
+        service-url:
+            defaultZone: http://192.168.40.132:10086/eureka
+logging:
+    level:
+        cn:
+            project:
+                mapper: debug
+mybatis:
+    type-aliases-package: cn.project.entity
+spring:
+    datasource:
+        password: root
+        type: com.alibaba.druid.pool.DruidDataSource
+        url: jdbc:mysql://192.168.40.132:3306/medicinedata?serverTimezone=UTC
+        username: root
+    rabbitmq:
+        addresses: amqp://192.168.40.132:5672
+        password: 123456
+        username: admin
+    redis:
+        host: 192.168.40.132
+        password: 123456
+    zipkin:
+        base-url: http://192.168.40.132:9411/
