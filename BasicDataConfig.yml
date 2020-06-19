@@ -30,4 +30,4 @@ spring:
     redis:
         host: 192.168.40.132
         password: 123456
-    test: hello16
+    test: hello17
