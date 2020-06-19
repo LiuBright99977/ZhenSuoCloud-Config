@@ -24,6 +24,4 @@ spring:
     redis:
         host: 192.168.40.132
         password: 123456
-    zipkin:
-       base-url: http://192.168.40.132:9411/    
     test: hello10
