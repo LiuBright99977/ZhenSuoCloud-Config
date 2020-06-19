@@ -17,6 +17,12 @@ spring:
         type: com.alibaba.druid.pool.DruidDataSource
         url: jdbc:mysql://192.168.40.132:3306/basicdata?serverTimezone=UTC
         username: root
+    zipkin:
+      sender:
+       type: rabbit
+    sleuth:
+     sampler:
+      probability: 1.0    
     rabbitmq:
         addresses: amqp://192.168.40.132:5672
         password: 123456
